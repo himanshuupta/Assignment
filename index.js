@@ -1,9 +1,6 @@
-const email = prompt("Enter e-mail address");
+const email = prompt("Enter email address");
 const password = prompt("Enter Password");
-
-/*   -----------------if-else------------*/
-if (email == "stu@letsupgrade.com" && password == "12345") {
-    alert("You are logged in");
-} else {
+/*--------------------Ternary condition ------------------*/
+email == "stu@letsupgrade.com" && password == 12345 ?
+    alert("You are logged in") :
     alert("Try again with correct email and password");
-}
