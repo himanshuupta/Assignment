@@ -1,12 +1,9 @@
-const email = prompt("Enter email address");
-const password = prompt("Enter Password");
-/*---------------- Switch case ---------------- */
-switch (email && password) {
-    case "stu@letsupgrade.com" && "12345":
-        {
-            alert(" You are logged in ");
-            break;
-        }
-    default:
-        alert("Try again  with correct email and password");
+function PrintTable(num) {
+    for (let i = 0; i <= 10; i++) {
+        console.log(num + "*" + i + "=" + num * i);
+        // document.write(num + "*" + i + "=" + num * i + "<br>");
+    }
 }
+const num = prompt("Enter a number");
+
+PrintTable(num);
