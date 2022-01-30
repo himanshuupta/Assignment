@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    #change {
+        height: 86px;
+        width: 446px;
+        border: 10px solid brown;
+        border-radius: 5px;
+        margin-left: 450px;
+        margin-top: 80px;
+        padding-top: 10px;
+        background-color: brown;
+        color: beige;
+    }
+    
+    #option {
+        height: 74px;
+        width: 370px;
+        margin-left: 470px;
+        margin-top: 50px;
+        border: 5px solid whitesmoke;
+        border-radius: 10px;
+        padding-left: 38px;
+        padding-top: 24px;
+        background-color: yellowgreen;
+        font-size: 16px;
+    }
+    
+    #choice {
+        display: flex;
+    }
+    
+    li {
+        margin-left: 30px;
+    }
+    
+    #color {
+        margin-left: 120px;
+        margin-top: 55px;
+        text-align: center;
+    }
+    
+    #myid {
+        height: 25px;
+        width: 410px;
+        margin-left: 474px;
+        margin-top: 55px;
+        text-align: center;
+        border: 5px solid white;
+        background-color: gray;
+    }
+    
+    button {
+        margin-left: 585px;
+        margin-top: 50px;
+        text-align: center;
+        background-color: rgb(255, 94, 0);
+        color: #faf1d7;
+        font-size: medium;
+        border: 10px solid orangered;
+        border-radius: 5px;
+    }
+</style>
+
+<body bgcolor="gray">
+    <section class="section" id="sec">
+        <div id="change">
+            <h1><b><i><center> Change my color  </center> </i> </b> </h1>
+        </div>
+        <div id="option">
+            <ol>
+                <div id="choice">
+                    <li>Red</li>
+                    <li>Green</li>
+                    <li>Blue</li>
+                    <li>Yellow</li>
+                </div>
+            </ol>
+        </div>
+        <div id="myid"> Change color</div>
+        <button class="btn" onclick="hello()"> Change the color</button>
+
+    </section>
+    <script>
+        function hello() {
+            const x = prompt("Enter color name");
+            if (x == "red" || x == "RED") {
+                document.getElementById('myid').innerHTML = x;
+                document.getElementById('myid').style.backgroundColor = "red"
+                document.getElementById('myid').style.color = "white"
+            } else if (x == "green" || x == "GREEN") {
+                document.getElementById('myid').innerHTML = x;
+                document.getElementById('myid').style.backgroundColor = "green"
+                document.getElementById('myid').style.color = "white"
+            } else if (x == "blue" || x == "BLUE") {
+                document.getElementById('myid').innerHTML = x;
+                document.getElementById('myid').style.backgroundColor = "blue"
+                document.getElementById('myid').style.color = "white"
+            } else if (x == "yellow" || x == "YELLOW") {
+                document.getElementById('myid').innerHTML = x;
+                document.getElementById('myid').style.backgroundColor = "yellow"
+                document.getElementById('myid').style.color = "white"
+            } else {
+                document.getElementById('myid').style.color = "blue";
+                document.getElementById('myid').style.backgroundColor = "white"
+                document.getElementById('myid').innerHTML = "Please enter the correct color as the above option ";
+            }
+        }
+    </script>
+</body>
+
+</html>
